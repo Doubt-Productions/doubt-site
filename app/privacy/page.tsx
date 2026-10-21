@@ -115,8 +115,10 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          Doubt reads message content for one feature only: ticket transcripts. Transcripts are
-          stored only when the server has enabled message content for tickets.
+          Doubt reads message content for one feature only: ticket transcripts. A transcript is
+          saved for every closed ticket. Message text is included only while Doubt has
+          Discord’s approval to read message content; without it, a transcript holds authors,
+          times, embeds and attachment names.
         </p>
         <ul>
           <li>
