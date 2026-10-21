@@ -171,12 +171,25 @@ const sections: LegalSection[] = [
     id: 'use',
     title: 'How we use it',
     body: (
-      <ul>
-        <li>To run Doubt’s features in the servers that added it.</li>
-        <li>To let a server’s staff review cases, tickets, AutoMod hits and levels.</li>
-        <li>To fix problems and keep Doubt secure and free of abuse.</li>
-        <li>To answer you when you contact us.</li>
-      </ul>
+      <>
+        <ul>
+          <li>To run Doubt’s features in the servers that added it.</li>
+          <li>To let a server’s staff review cases, tickets, AutoMod hits and levels.</li>
+          <li>To fix problems and keep Doubt secure and free of abuse.</li>
+          <li>To answer you when you contact us.</li>
+        </ul>
+        <p>
+          Doubt’s own staff can block a server or a user who misuses Doubt or breaks our{' '}
+          <Link href="/terms">Terms of Service</Link>. For a block we store the server or user ID,
+          the reason, which staff member made it and when, and we keep a log of these staff actions.
+          Doubt’s staff get no access to a server’s settings, cases, tickets or transcripts unless
+          they hold those permissions in that server themselves.
+        </p>
+        <p>
+          To report misuse of Doubt, tell us in the <a href="/support">support server</a> or email{' '}
+          <Email />.
+        </p>
+      </>
     ),
   },
   {
@@ -221,9 +234,14 @@ const sections: LegalSection[] = [
             <strong>Economy account</strong>: until you close it with <code>/economy</code>.
           </li>
           <li>
+            <strong>A server’s data</strong> (settings, cases, tickets, AutoMod hits, levels,
+            economy accounts and AFK statuses): deleted automatically 30 days after Doubt is removed
+            from the server. Adding Doubt back within those 30 days keeps it. A block and the staff
+            log entry about it are kept.
+          </li>
+          <li>
             <strong>Everything else</strong>: as long as it is needed for the feature, or until a
-            server’s staff, you or we delete it. A server owner who removes Doubt can ask us to
-            delete that server’s data.
+            server’s staff, you or we delete it.
           </li>
         </ul>
       </>
