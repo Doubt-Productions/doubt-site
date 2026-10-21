@@ -1,0 +1,2 @@
+# Public Discord application ID (not a secret), removed from .env.example in the next commit.
+f202bdd427dc7680b11e16afc9b09ead0adddfb2:.env.example:discord-client-id:4
