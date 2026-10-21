@@ -200,7 +200,7 @@ const sections: LegalSection[] = [
             <strong>Authorities</strong>, when the law requires it.
           </li>
         </ul>
-        <p>Doubt’s database is hosted in the European Union.</p>
+        <p>Doubt’s database is hosted in the European Union (Frankfurt, Germany).</p>
       </>
     ),
   },

@@ -65,7 +65,7 @@ export function Footer() {
       </div>
       <div className="border-t border-line">
         <p className="mx-auto max-w-6xl px-4 py-5 text-xs text-muted sm:px-6">
-          © Doubt Productions · operated by zVapor. Doubt is not affiliated with Discord.
+          © Doubt Productions. Doubt is not affiliated with Discord.
         </p>
       </div>
     </footer>
