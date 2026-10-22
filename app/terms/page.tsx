@@ -82,6 +82,19 @@ const sections: LegalSection[] = [
     ),
   },
   {
+    id: 'premium',
+    title: 'Doubt Premium',
+    body: (
+      <p>
+        Doubt Premium is an optional subscription, for yourself or for a server, bought through
+        Discord’s own shop. Discord handles the payment, renewal, cancelling and refunds under its
+        own terms. Premium supports Doubt and unlocks extras; we may change what it includes, and we
+        will say so in the <a href="/support">support server</a> before taking a perk away. Doubt
+        works without Premium. A blocked user or server keeps no access to Premium features.
+      </p>
+    ),
+  },
+  {
     id: 'dashboard',
     title: 'The dashboard',
     body: (
