@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { LEGAL_UPDATED } from '@/lib/legal';
+import { LEGAL_UPDATED, LEGAL_UPDATED_ISO } from '@/lib/legal';
 
 export type LegalSection = { id: string; title: string; body: ReactNode };
 
@@ -18,7 +18,7 @@ export function LegalPage({
         <p className="text-xs font-bold tracking-[0.16em] text-tint-1 uppercase">Legal</p>
         <h1 className="mt-3 text-4xl font-extrabold sm:text-5xl">{title}</h1>
         <p className="mt-4 text-sm text-muted">
-          Last updated <time dateTime="2026-10-21">{LEGAL_UPDATED}</time>
+          Last updated <time dateTime={LEGAL_UPDATED_ISO}>{LEGAL_UPDATED}</time>
         </p>
         <div className="prose-legal mt-6 text-muted">{intro}</div>
       </header>
