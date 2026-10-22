@@ -97,6 +97,16 @@ const sections: LegalSection[] = [
             twice.
           </li>
           <li>
+            <strong>Doubt Premium</strong>: if you subscribe in Discord’s shop, Discord tells Doubt
+            which account or server has an active subscription and when it ends. Doubt keeps that
+            only in memory while it runs and never sees or stores payment details; Discord handles
+            the payment.
+          </li>
+          <li>
+            <strong>Reports</strong> you send or that are about you, as described in{' '}
+            <a href="#reports">section 5</a>.
+          </li>
+          <li>
             <strong>Moderation and tickets</strong>: cases and tickets that involve you, as listed
             in <a href="#server-data">section 2</a>.
           </li>
@@ -115,10 +125,11 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          Doubt reads message content for one feature only: ticket transcripts. A transcript is
-          saved for every closed ticket. Message text is included only while Doubt has Discord’s
-          approval to read message content; without it, a transcript holds authors, times, embeds
-          and attachment names.
+          Apart from a message someone chooses to report (<a href="#reports">section 5</a>), Doubt
+          reads message content for one feature only: ticket transcripts. A transcript is saved for
+          every closed ticket. Message text is included only while Doubt has Discord’s approval to
+          read message content; without it, a transcript holds authors, times, embeds and attachment
+          names.
         </p>
         <ul>
           <li>
@@ -143,6 +154,37 @@ const sections: LegalSection[] = [
           <li>
             <strong>Never for AI or analytics</strong>: transcripts and message content are not used
             to train AI models, for analytics or for advertising.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: 'reports',
+    title: 'Reports to Doubt’s staff',
+    body: (
+      <>
+        <p>
+          Anyone can report a user, a message or a server that misuses Doubt with{' '}
+          <code>/report</code> or the <strong>Report message</strong> menu. Reports go only to
+          Doubt’s own staff, never to the server’s staff, and the person reported is never told who
+          sent it.
+        </p>
+        <ul>
+          <li>
+            <strong>What is saved</strong>: the reporter’s and the reported user’s or server’s IDs,
+            the server it was sent from, the reason, and for a reported message its channel and
+            message ID and up to 1,000 characters of its text, copied when the report is sent. Once
+            handled, also which staff member handled it, when, and their note.
+          </li>
+          <li>
+            <strong>Who can see it</strong>: Doubt’s staff, in the staff area of the dashboard and
+            in Doubt’s private staff channel.
+          </li>
+          <li>
+            <strong>How long</strong>: an open report is kept until it is handled. A resolved or
+            dismissed report is deleted 30 days after it was handled, together with its copy in the
+            staff channel. Reports are kept when Doubt is removed from the server they came from.
           </li>
         </ul>
       </>
@@ -186,8 +228,9 @@ const sections: LegalSection[] = [
           they hold those permissions in that server themselves.
         </p>
         <p>
-          To report misuse of Doubt, tell us in the <a href="/support">support server</a> or email{' '}
-          <Email />.
+          To report misuse of Doubt, use <code>/report</code> or the <strong>Report message</strong>{' '}
+          menu (<a href="#reports">section 5</a>), tell us in the{' '}
+          <a href="/support">support server</a>, or email <Email />.
         </p>
       </>
     ),
@@ -200,7 +243,8 @@ const sections: LegalSection[] = [
         <p>We do not sell your data and we do not share it for advertising. It is handled by:</p>
         <ul>
           <li>
-            <strong>Discord</strong>, the platform Doubt runs on.
+            <strong>Discord</strong>, the platform Doubt runs on, which also handles Premium
+            payments.
           </li>
           <li>
             <strong>Our service providers</strong>, who host the bot, the database, the dashboard
@@ -228,6 +272,10 @@ const sections: LegalSection[] = [
             described in <a href="#transcripts">section 4</a>.
           </li>
           <li>
+            <strong>Reports</strong>: until handled, then 30 days, as described in{' '}
+            <a href="#reports">section 5</a>.
+          </li>
+          <li>
             <strong>AFK</strong>: until you are back or remove it with <code>/afk remove</code>.
           </li>
           <li>
@@ -236,8 +284,8 @@ const sections: LegalSection[] = [
           <li>
             <strong>A server’s data</strong> (settings, cases, tickets, AutoMod hits, levels,
             economy accounts and AFK statuses): deleted automatically 30 days after Doubt is removed
-            from the server. Adding Doubt back within those 30 days keeps it. A block and the staff
-            log entry about it are kept.
+            from the server. Adding Doubt back within those 30 days keeps it. A block, the staff log
+            entry about it and reports sent from that server are kept.
           </li>
           <li>
             <strong>Everything else</strong>: as long as it is needed for the feature, or until a
@@ -319,7 +367,8 @@ export default function Privacy() {
         <p>
           This policy explains what Doubt stores, why, for how long, and how to have it deleted. The
           short version: Doubt keeps what its features need, reads message text only for ticket
-          transcripts, deletes those after 30 days, and never sells your data.
+          transcripts and messages someone reports, deletes those after 30 days, and never sells
+          your data.
         </p>
       }
       sections={sections}
