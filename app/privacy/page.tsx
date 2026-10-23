@@ -110,10 +110,11 @@ const sections: LegalSection[] = [
             you reset them with <code>/rank style</code> or <code>/profile flair</code>.
           </li>
           <li>
-            <strong>Doubt Premium</strong>: if you subscribe in Discord’s shop, Discord tells Doubt
-            which account or server has an active subscription and when it ends. Doubt keeps that
-            only in memory while it runs and never sees or stores payment details; Discord handles
-            the payment.
+            <strong>Doubt Premium</strong>: if you buy it in Discord’s shop, Discord tells Doubt
+            which account or server has Premium and when a subscription ends. Doubt keeps that only
+            in memory while it runs and never sees or stores payment details; Discord handles the
+            payment. If you are in the Doubt support server, Doubt gives you its Premium role there
+            while you have Premium.
           </li>
           <li>
             <strong>Reports</strong> you send or that are about you, as described in{' '}

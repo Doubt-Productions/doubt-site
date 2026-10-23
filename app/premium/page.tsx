@@ -35,13 +35,15 @@ export default function Premium() {
           Doubt <span className="grad-text">Premium</span>
         </h1>
         <p className="mt-5 text-lg leading-relaxed text-muted">
-          Premium supports Doubt and unlocks extras. There are two subscriptions: one an admin buys
-          for a whole server, and one you buy for yourself. Run <code>/premium</code> in Discord to
-          see both and subscribe. Discord handles the payment, renewal and cancelling.
+          Premium supports Doubt and unlocks extras. Server Premium is a subscription an admin buys
+          for a whole server, and User Premium is a one-time purchase you make for yourself. Run{' '}
+          <code>/premium</code> in Discord to see both and buy. Discord handles the payment, and
+          renewing or cancelling the server subscription.
         </p>
         <p className="mt-4 leading-relaxed text-muted">
           Moderation, AutoMod, reports and tickets stay free for every server. Settings you make
-          with Premium are kept if it ends, and come back when you subscribe again.
+          with Premium are kept if it ends, and come back when you subscribe again. Premium members
+          also get a Premium role in the Doubt support server.
         </p>
       </header>
 
@@ -49,7 +51,9 @@ export default function Premium() {
         <h2 id="server-perks" className="text-2xl font-extrabold sm:text-3xl">
           For your server
         </h2>
-        <p className="mt-2 text-muted">Bought by an admin, for everyone in that server.</p>
+        <p className="mt-2 text-muted">
+          A subscription an admin buys, for everyone in that server.
+        </p>
         <PerkGrid perks={serverPerks} />
       </section>
 
@@ -57,7 +61,9 @@ export default function Premium() {
         <h2 id="user-perks" className="text-2xl font-extrabold sm:text-3xl">
           For you
         </h2>
-        <p className="mt-2 text-muted">Yours in every server where you use Doubt.</p>
+        <p className="mt-2 text-muted">
+          A one-time purchase, yours to keep in every server where you use Doubt.
+        </p>
         <PerkGrid perks={userPerks} />
       </section>
 
