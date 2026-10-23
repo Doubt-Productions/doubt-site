@@ -216,6 +216,11 @@ const sections: LegalSection[] = [
           that server.
         </p>
         <p>
+          If you choose to join Doubt’s support server when you sign in or invite Doubt, Doubt uses
+          Discord’s “join servers for you” permission once to add you, and doesn’t keep that
+          permission’s token.
+        </p>
+        <p>
           This website sets no cookies and runs no analytics or trackers. A theme choice you make is
           kept in your own browser only. Like any web host, our hosting provider handles request
           data such as IP addresses to serve and protect the site.
