@@ -5,6 +5,7 @@ import { ThemeToggle } from './theme-toggle';
 
 const nav = [
   { label: 'Features', href: '/#features', internal: true },
+  { label: 'Premium', href: '/premium', internal: true },
   { label: 'Docs', href: links.docs },
   { label: 'Dashboard', href: links.dashboard },
   { label: 'Support', href: '/support', internal: true },

@@ -7,6 +7,7 @@ const groups = [
     title: 'Product',
     items: [
       { label: 'Add to Discord', href: '/invite' },
+      { label: 'Premium', href: '/premium', internal: true },
       { label: 'Dashboard', href: links.dashboard },
       { label: 'Docs', href: links.docs },
     ],
