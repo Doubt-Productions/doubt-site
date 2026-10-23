@@ -47,6 +47,14 @@ const sections: LegalSection[] = [
             and the level-up message; level reward roles.
           </li>
           <li>
+            <strong>Premium settings</strong> for servers with Doubt Premium: XP boosts (role,
+            channel or category IDs and their multiplier) and channels without XP; whether the
+            welcome image card is on; custom ticket topics (name, emoji, description and staff
+            role); which parts of Doubt’s look in that server are customised, and its About Me text
+            (the images themselves stay with Discord); and scheduled messages (the channel, who made
+            it, the embed, when it repeats and when it last ran).
+          </li>
+          <li>
             <strong>Moderation cases</strong>: the case number, the action (warn, timeout, kick,
             ban, unban), the member and the moderator, the reason, the duration and when it ends,
             whether the member was sent a DM, the case card posted in the mod log, and who last
@@ -95,6 +103,11 @@ const sections: LegalSection[] = [
             <strong>top.gg votes</strong>: when you vote for Doubt on top.gg, top.gg sends us your
             user ID. We keep the time of the vote and the coins paid out, so a vote is never paid
             twice.
+          </li>
+          <li>
+            <strong>Premium extras you set</strong>: your rank card style (a background name and two
+            colours) and your profile flair (an accent colour and a one-line bio). They stay until
+            you reset them with <code>/rank style</code> or <code>/profile flair</code>.
           </li>
           <li>
             <strong>Doubt Premium</strong>: if you subscribe in Discord’s shop, Discord tells Doubt
@@ -282,10 +295,11 @@ const sections: LegalSection[] = [
             <strong>Economy account</strong>: until you close it with <code>/economy</code>.
           </li>
           <li>
-            <strong>A server’s data</strong> (settings, cases, tickets, AutoMod hits, levels,
-            economy accounts and AFK statuses): deleted automatically 30 days after Doubt is removed
-            from the server. Adding Doubt back within those 30 days keeps it. A block, the staff log
-            entry about it and reports sent from that server are kept.
+            <strong>A server’s data</strong> (settings including Premium settings and scheduled
+            messages, cases, tickets, AutoMod hits, levels, economy accounts and AFK statuses):
+            deleted automatically 30 days after Doubt is removed from the server. Adding Doubt back
+            within those 30 days keeps it. A block, the staff log entry about it and reports sent
+            from that server are kept.
           </li>
           <li>
             <strong>Everything else</strong>: as long as it is needed for the feature, or until a
