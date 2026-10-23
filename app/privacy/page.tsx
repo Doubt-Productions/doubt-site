@@ -238,8 +238,12 @@ const sections: LegalSection[] = [
           Doubt’s own staff can block a server or a user who misuses Doubt or breaks our{' '}
           <Link href="/terms">Terms of Service</Link>. For a block we store the server or user ID,
           the reason, which staff member made it and when, and we keep a log of these staff actions.
-          Doubt’s staff get no access to a server’s settings, cases, tickets or transcripts unless
-          they hold those permissions in that server themselves.
+          Doubt’s staff can also give Premium to a user or a server; for that we store the user or
+          server ID, who gave it, the reason, when it was given and when it ends, if it does. It is
+          deleted once it ends or is removed. Whether someone is Doubt staff can follow their roles
+          in Doubt’s support server; those roles are read live and not stored. Doubt’s staff get no
+          access to a server’s settings, cases, tickets or transcripts unless they hold those
+          permissions in that server themselves.
         </p>
         <p>
           To report misuse of Doubt, use <code>/report</code> or the <strong>Report message</strong>{' '}
@@ -296,11 +300,11 @@ const sections: LegalSection[] = [
             <strong>Economy account</strong>: until you close it with <code>/economy</code>.
           </li>
           <li>
-            <strong>A server’s data</strong> (settings including Premium settings and scheduled
-            messages, cases, tickets, AutoMod hits, levels, economy accounts and AFK statuses):
-            deleted automatically 30 days after Doubt is removed from the server. Adding Doubt back
-            within those 30 days keeps it. A block, the staff log entry about it and reports sent
-            from that server are kept.
+            <strong>A server’s data</strong> (settings including Premium settings, Premium given by
+            Doubt’s staff and scheduled messages, cases, tickets, AutoMod hits, levels, economy
+            accounts and AFK statuses): deleted automatically 30 days after Doubt is removed from
+            the server. Adding Doubt back within those 30 days keeps it. A block, the staff log
+            entry about it and reports sent from that server are kept.
           </li>
           <li>
             <strong>Everything else</strong>: as long as it is needed for the feature, or until a
