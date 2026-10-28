@@ -16,6 +16,7 @@ const groups = [
     title: 'Help',
     items: [
       { label: 'Support server', href: '/support' },
+      { label: 'Status', href: links.status },
       { label: 'Privacy', href: '/privacy', internal: true },
       { label: 'Terms', href: '/terms', internal: true },
     ],

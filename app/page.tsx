@@ -1,6 +1,10 @@
 import { Features } from '@/components/features';
 import { HeroArt } from '@/components/hero-art';
+import { StatusPill } from '@/components/status-pill';
 import { links } from '@/lib/links';
+
+// Regenerate the page at most every 5 minutes so the status pill stays fresh (lib/status.ts).
+export const revalidate = 300;
 
 const steps = [
   {
@@ -60,6 +64,7 @@ export default function Home() {
               </a>
               .
             </p>
+            <StatusPill />
           </div>
           <div className="order-first md:order-none">
             <div className="mx-auto w-56 sm:w-72 md:w-full">
