@@ -22,6 +22,16 @@
       "source": "/docs/legal/terms",
       "destination": "/terms",
       "permanent": true
+    },
+    {
+      "source": "/docs",
+      "destination": "https://docs.doubtbot.eu",
+      "permanent": true
+    },
+    {
+      "source": "/docs/:path*",
+      "destination": "https://docs.doubtbot.eu/:path*",
+      "permanent": true
     }
   ],
   "headers": [
