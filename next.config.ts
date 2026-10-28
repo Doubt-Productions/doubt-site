@@ -19,9 +19,9 @@ for (const [source, expected] of [
   }
 }
 
-// Static export: `next build` writes plain files to out/.
+// Pages are prerendered at build time. The home page is regenerated every few minutes on Vercel
+// (incremental static regeneration) so the live status stays current.
 const nextConfig: NextConfig = {
-  output: 'export',
   images: { unoptimized: true },
   poweredByHeader: false,
 };

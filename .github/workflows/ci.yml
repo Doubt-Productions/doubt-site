@@ -28,7 +28,7 @@ jobs:
       - name: Typecheck
         run: yarn typecheck
 
-      - name: Build (static export)
+      - name: Build
         env:
           NEXT_TELEMETRY_DISABLED: '1'
         run: yarn build

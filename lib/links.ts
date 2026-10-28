@@ -34,5 +34,7 @@ export const links = {
   support: 'https://discord.gg/h6Ybsjg6NG',
   dashboard: 'https://dash.doubtbot.eu',
   docs: 'https://docs.doubtbot.eu',
+  /** Public status page of the bot's monitor; lib/status.ts reads its RSS feed and badges. */
+  status: 'https://status.zvapor.xyz/monitors/bot-doubt',
   email: 'contact@doubtbot.eu',
 } as const;

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "start": "next start",
     "lint": "biome check .",
     "biome:ci": "biome ci .",
     "biome:fix": "biome check --write . && biome format --write .",
