@@ -102,7 +102,15 @@ const sections: LegalSection[] = [
           <li>
             <strong>top.gg votes</strong>: when you vote for Doubt on top.gg, top.gg sends us your
             user ID. We keep the time of the vote and the coins paid out, so a vote is never paid
-            twice.
+            twice and your vote count and last vote can be shown for linked roles.
+          </li>
+          <li>
+            <strong>Linked roles</strong>: if you link Doubt on the dashboard’s{' '}
+            <a href={`${links.dashboard}/linked-roles`}>linked roles page</a>, Discord gives Doubt a
+            sign-in that can only read your account and update your linked-role data. Doubt keeps
+            that sign-in encrypted, together with the values it last sent to Discord: when you last
+            voted, how many votes, whether you have User Premium and whether you are on Doubt’s
+            staff team. Servers can use those values for roles; Doubt sends nothing else.
           </li>
           <li>
             <strong>Premium extras you set</strong>: your rank card style (a background name and two
@@ -221,6 +229,10 @@ const sections: LegalSection[] = [
           permission’s token.
         </p>
         <p>
+          If you link Doubt for linked roles, the dashboard passes Discord’s sign-in for that
+          straight to the bot, which keeps it as described above; the dashboard itself keeps none.
+        </p>
+        <p>
           This website sets no cookies and runs no analytics or trackers. A theme choice you make is
           kept in your own browser only. Like any web host, our hosting provider handles request
           data such as IP addresses to serve and protect the site.
@@ -310,6 +322,11 @@ const sections: LegalSection[] = [
             accounts and AFK statuses): deleted automatically 30 days after Doubt is removed from
             the server. Adding Doubt back within those 30 days keeps it. A block, the staff log
             entry about it and reports sent from that server are kept.
+          </li>
+          <li>
+            <strong>Linked roles</strong>: until you unlink on the linked roles page or remove
+            Doubt’s connection in Discord (User Settings → Authorized Apps); Doubt then deletes the
+            sign-in and the values it sent.
           </li>
           <li>
             <strong>Everything else</strong>: as long as it is needed for the feature, or until a
