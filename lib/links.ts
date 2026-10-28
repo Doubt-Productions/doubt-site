@@ -12,7 +12,7 @@ export const PRODUCTION_CLIENT_ID = '941052587837378570';
  * Bot permissions requested on invite. Single source of truth: BOT_INVITE_PERMISSIONS_INTEGER in
  * doubt-bot `src/utils/permissions.ts`. Keep the two in sync.
  */
-export const INVITE_PERMISSIONS = '1099780189206';
+export const INVITE_PERMISSIONS = '1099914407094';
 
 function resolveClientId(): string {
   const fromEnv = process.env.NEXT_PUBLIC_DISCORD_CLIENT_ID?.trim();
